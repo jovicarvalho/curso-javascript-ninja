@@ -6,8 +6,7 @@ Nesse exercício, você está livre para escolher os nomes para suas variáveis 
 // Crie uma função que receba dois argumentos e retorne a soma dos mesmos.
 function soma(x,y)
 {
-  var somar = x+y;
-  return soma;
+  return x+y;
 }
 
 // Declare uma variável que receba a invocação da função criada acima, passando dois números quaisquer por argumento, e somando `5` ao resultado retornado da função.
@@ -29,9 +28,8 @@ Onde VALOR é o novo valor da variável.
 */
 function texto(numero)
 {
-  var x = numero;
-  texto = "O valor da variável agora é " + x; 
-  return texto;
+  var x = numero; 
+  return "O valor da variável agora é " + x;
 }
 
 // Invoque a função criada acima.
@@ -53,12 +51,10 @@ function multi(x,y,z)
 {
   if (x == undefinined || y == undefined || z == undefinided)
   {
-    texto = "Preencha Todos os valores corretamente"
-    return texto; 
+    return "Preencha Todos os valores corretamente"; 
   } else
   {
-    var multi = x * y * z;
-    return multi + 2;
+    return (x * y * z) + 2;
   }
 }
 
@@ -87,18 +83,17 @@ function tarefa(num1,num2,num3){
   if (num1 !== undefied){
     return num1;
   } else if(num1 !== undefined || num2 !== undefined) {
-    var soma = num1 + num2;
-    return soma;
-  }else if(num1 !== undefined ||num2 !== undefined ||num3 !== undefined){
-    var soma = num1 + num2;
-    return soma/num3;
+  
+    return num1 + num2;
+    
+  } else if(num1 !== undefined ||num2 !== undefined ||num3 !== undefined){
+    return (num1 + num2)/num3;
   } else if(um1 == undefined ||num2 == undefined ||num3 == undefined){
-    texto = "false"/
-    return texto;
-  } else {
-    texto = "null";
-    return texto;
-  }
+    return "false";
+  } else 
+    {
+    return "null";
+    }
   }
 }
 
