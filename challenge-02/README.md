@@ -79,23 +79,20 @@ Crie uma função com as seguintes características:
 5. Se nenhum argumento for passado, retorne o valor booleano `false`.
 6. E ainda, se nenhuma das condições acima forem atendidas, retorne `null`.
 */
-function tarefa(num1,num2,num3){
-  if (num1 !== undefied){
-    return num1;
-  } else if(num1 !== undefined || num2 !== undefined) {
-  
-    return num1 + num2;
-    
-  } else if(num1 !== undefined ||num2 !== undefined ||num3 !== undefined){
-    return (num1 + num2)/num3;
-  } else if(um1 == undefined ||num2 == undefined ||num3 == undefined){
-    return "false";
-  } else 
-    {
-    return "null";
+function atividade(a,b,c){
+  if(a !=== undefined && b === undefined && c === undefined){
+    return a;
+  } else if(a !=== undefined && b !=== undefined && c === undefined){
+    return a+b;
+  } else if(a !=== undefined && b === undefined && c !=== undefined){
+    var soma = a + b;
+    return soma/c;
+  } else if((a === undefined && b === undefined && c === undefined){
+    return false;
+  } else { 
+    return null;
     }
-  }
-}
+   } 
 
 // Invoque a função acima utilizando todas as possibilidades (com nenhum argumento, com um, com dois e com três.) Coloque um comentário de linha ao lado da função com o resultado de cada invocação.
 tarefa() // "false"
