@@ -55,35 +55,58 @@ seguintes propriedades (os valores devem ser do tipo mostrado abaixo):
 - `assentos` - Number - cinco por padrão
 - `quantidadePessoas` - Number - zero por padrão
 */
-?
+var carro = {
+marca : "Nissan",
+modelo : "Kicks",
+placa : "KACCA-212",
+ano : 2015,
+cor : "Branco Pérolado",
+quantasPortas : 4,
+assentos : 5,
+quantidadePessoas : 0,
+}
 
 /*
 Crie um método chamado `mudarCor` que mude a cor do carro conforme a cor
 passado por parâmetro.
 */
-?
+
+carro.mudaCor = function (novaCor){
+  carro.cor = novaCor;
+  return " A cor do carro foi mudada para " + novaCor;
+  
+}
 
 /*
 Crie um método chamado `obterCor`, que retorne a cor do carro.
 */
-?
+carro.obterCor = functioc(){
+  return carro.cor;
+}
 
 /*
 Crie um método chamado `obterModelo` que retorne o modelo do carro.
 */
-?
+carro.obterModelo = function(){
+  return carro.modelo; 
+}
 
 /*
 Crie um método chamado `obterMarca` que retorne a marca do carro.
 */
-?
+carro.obterMarca = function(){
+  return carro.marca;
+}
 
 /*
 Crie um método chamado `obterMarcaModelo`, que retorne:
 "Esse carro é um [MARCA] [MODELO]"
 Para retornar os valores de marca e modelo, utilize os métodos criados.
 */
-?
+
+carro.obterMarcaModelo = function(){
+  return "Esse carro é um " + carro.marca + " " + carro.modelo;
+}
 
 /*
 Crie um método que irá adicionar pessoas no carro. Esse método terá as
