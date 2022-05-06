@@ -80,7 +80,7 @@ carro.mudaCor = function (novaCor){
 /*
 Crie um método chamado `obterCor`, que retorne a cor do carro.
 */
-carro.obterCor = functioc(){
+carro.obterCor = function(){
   return carro.cor;
 }
 
@@ -124,7 +124,32 @@ mostrar quantos assentos ainda podem ser ocupados, com a frase:
 - Se couber somente mais uma pessoa, mostrar a palavra "pessoa" no retorno
 citado acima, no lugar de "pessoas".
 */
-?
+
+carro.adicionarPessoas = function(pessoas){
+  if(pessoas < 0 ){
+    carro.quantidadePessoas = carro.quantidadePessoas + pessoas;
+    return "Já temos " + carro.quantidadePessoas + " pessoas no carro";
+  }
+  if (carro.quantidadePessoas < 5 && (carro.quantidadePessoas + pessoas) <= 5 ){
+    carro.quantidadePessoas = carro.quantidadePessoas + pessoas;
+    return "Já temos " + carro.quantidadePessoas + " pessoas no carro";
+  }
+  
+  if((carro.quantidadePessoas + pessoas) < 5){
+    var faltam = 5 - carro.quantidadePessoas
+    var pessoas = " pessoas!";
+    if(faltam == 1){
+      pessoas = " pessoa!";
+    }else if(faltam>1){
+    return "Só cabem mais " + faltam + pessoas ;
+    }
+  }
+   if(carro.quantidadePessoas = 5){
+    return " O carro já está lotado";
+  }
+  
+  
+}
 
 /*
 Agora vamos verificar algumas informações do carro. Para as respostas abaixo,
@@ -134,38 +159,48 @@ retornar algum valor.
 
 Qual a cor atual do carro?
 */
-?
+carro.obterCor()
 
 // Mude a cor do carro para vermelho.
-?
+carro.mudarCor("vermelho");
 
 // E agora, qual a cor do carro?
-?
+
+carro.obterCor()
+//vermelho
 
 // Mude a cor do carro para verde musgo.
-?
+carro.mudarCor("verde musgo");
 
 // E agora, qual a cor do carro?
-?
+carro.obterCor()
+//"verde musco"
 
 // Qual a marca e modelo do carro?
-?
+
+carro.obterMarcaModelo()
 
 // Adicione 2 pessoas no carro.
-?
+
+carro.adicionarPessoas(2);
+
 
 // Adicione mais 4 pessoas no carro.
-?
+
+carro.adicionarPessoas(4)
 
 // Faça o carro encher.
-?
+
+carro.adicionarPessoas(5)
 
 // Tire 4 pessoas do carro.
-?
+
+carro.adicionarPessoas(-4)
 
 // Adicione 10 pessoas no carro.
-?
+
+carro.adicionarPessoas(10)
 
 // Quantas pessoas temos no carro?
 ?
-```
+carro.quantidadePessoas;
