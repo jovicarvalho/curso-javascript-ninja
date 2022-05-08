@@ -65,29 +65,29 @@ os livros.
 
 function book(livro){
   var Livros = {
-    livro1: {
+    Macunaima: {
       quantidadePaginas: 100,
       autor:"Joao",
       editora:"Saraiva",
     },
-    livro2: {
+    Foco: {
       quantidadePaginas: 300,
       autor:"Cristopher Nolan",
       editora:"Dark Avenger",
     },
-    livro3: {
+    dorianGray: {
       quantidadePaginas: 1000,
       autor:"Critãoes",
       editora:"Igreja Católica",
       },
     }
-  if (livro == undefined){
+  if (livro === undefined){
     return Livros;
   }
   livro = {
       quantidadePaginas: 100,
-      autor:Joao,
-      editora:Saraiva,
+      autor:"Joao",
+      editora:"Saraiva",
   }
   return livro
 }
@@ -104,18 +104,19 @@ usando a frase:
 "O livro [NOME_DO_LIVRO] tem [X] páginas!"
 */
 
-console.log("O livro "+ book().tostring(livro1)"")
+console.log("O livro Bíblia tem " + "book("Biblia").quantidadePaginas + " páginas!" ; 
 
 /*
 Ainda com a função acima, imprima o nome do autor de um livro qualquer, usando
 a frase:
 "O autor do livro [NOME_DO_LIVRO] é [AUTOR]."
 */
-// ?
+
+console.log("O autor do livro A biblia é" + book("Blibia").autor);
 
 /*
 Ainda com a função acima, imprima o nome da editora de um livro qualquer, usando
 a frase:
 "O livro [NOME_DO_LIVRO] foi publicado pela editora [NOME_DA_EDITORA]."
 */
-// ?
+console.log("O livro A bíblia foi publicado pela editora " + book.)
