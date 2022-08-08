@@ -56,9 +56,7 @@ função acima. Entre esses 4, adicione 1 que não esteja entre os 5 primeiros.
 showTeamPosition(1)
 showTeamPosition(2)
 showTeamPosition(3)
-showTeamPosition(4)
-
-times[6] = "Napoli";
+showTeamPosition(6)
 
 /*
 Mostre os números de 20 a 30 no console (inclusive o 30), usando a estrutura de
@@ -67,9 +65,9 @@ repetição "while".
 var contador = 0
 var numeroImpresso = 20
 while(contador <= 11){
-  console.log()
-  numeroImpresso++
-  contador++
+  console.log(numeroImpresso);
+  numeroImpresso++;
+  contador++;
 }
 
 /*
